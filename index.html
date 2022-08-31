@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+   <title>Progress Steps</title>
 </head>
 <body>
-    
+    <!-- Kontener który zawiera wszytko -->
+    <div class="container"> 
+
+        <!-- Kontener który zawiera wszystkie elementy progresu -->
+        <div class="progress-container">
+
+            <!-- Linia wskazująca progres -->
+            <div class="progress" id="progress"></div>
+
+            <!-- Koła między którymi porusza się linia -->
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+        </div>
+
+    <button class="btn" id="prev" disabled>Previous</button>
+    <button class="btn" id="next">Next</button>
+
+    </div>
 
 
     <script src="./srcipt.js"></script>
